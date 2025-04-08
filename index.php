@@ -34,9 +34,9 @@
 
 			<!-- iframe for the results to show on the web page. -->
 			<iframe id="results" name="results">			
-				"You earn " + "$"+ $moneyBeforeTax + "before tax" + "."
-        "The government takes " + "$"+ $moneyTaken + "."
-        "You earn " + "$"+ $moneyEarned + "after tax" + "."
+				<div>"You earn " + "$"+ $moneyBeforeTax + "before tax" + "."</div>
+        <div>"The government takes " + "$"+ $moneyTaken + "."</div>
+        <div>"You earn " + "$"+ $moneyEarned + "after tax" + "."</div>
       </iframe>
 	</body>
 </html>

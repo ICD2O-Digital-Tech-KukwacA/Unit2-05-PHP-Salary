@@ -20,22 +20,23 @@
   <body>
 		<!-- php echo to print the html to the page -->
     <?php 
-			echo "<h1>Salary Program</h1>";
-			echo "<h3>This program will calculate the area and perimeter of a circle.</h3>";
+			echo "<h1>Salary Program in PHP</h1>";
+			echo "<h3>This program will calculate the salary of the user.<h3>";
 		?>
-		<!-- form to get the hours worked and hourly rate from the user -->
+		<!-- form to get the base and height from the user -->
     <form action="./results.php" method="post" target="results">
-      <label for="lblHoursWorked">HoursWorked (h):</label>
-      <input type="float" id="hoursWorked" placeholder="Hours worked (h)" name="Hours Worked"><br><br>
-      <label for="lblHourlyRate">HourlyRate ($):</label>
-      <input type="float" id="hourlyRate" placeholder="Hourly rate ($)" name="Hourly Rate"><br><br>
-      <input type="submit" value="Calculate money earned and money taken">
+      <label for="lblHoursWorked">HoursWorked (cm):</label>
+      <input type="text" id="hoursWorked" placeholder="Hours Worked (h)" name="Hours Worked"><br><br>
+      <label for="lblHourlyRate">HourlyRate (cm):</label>
+      <input type="text" id="hourlyRate" placeholder="Hourly Rate ($)" name="Hourly Rate"><br><br>
+      <input type="submit" value="Calculate money earned before and after tax and money taken">
 		</form>
 
 			<!-- iframe for the results to show on the web page. -->
 			<iframe id="results" name="results">			
-				" You earn " + "$"+ $moneyEarned + "per day."
-        " The government takes " + "$"+ $moneyTaken + "."
-	    </iframe>
+				"You earn " + "$"+ $moneyBeforeTax + "before tax" + "."
+        "The government takes " + "$"+ $moneyTaken + "."
+        "You earn " + "$"+ $moneyEarned + "after tax" + "."
+      </iframe>
 	</body>
 </html>

@@ -5,7 +5,7 @@
 	const TAX = 0.2005
 
 	// calculate the salary
-	$moneyBeforeTax = hoursWorked * hourlyRate
+	$moneyBeforeTax = $hoursWorked * $hourlyRate
 	$moneyTaken = TAX * $moneyBeforeTax
 	$moneyEarned = $moneyBeforeTax - $moneyTaken
 

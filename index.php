@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Salary Program">
     <meta name="keywords" content="immaculata, icd2o">
-    <meta name="author" content="Kukwac">
+    <meta name="author" content="kukwac">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Code for the favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./Favicons/apple-touch-icon.png">
@@ -15,28 +15,26 @@
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Title -->
-    <title>Salary Program</title>
+    <title>Salary Program, in PHP</title>
   </head>
   <body>
 		<!-- php echo to print the html to the page -->
     <?php 
-			echo "<h1>Salary Program in PHP</h1>";
-			echo "<h3>This program will calculate the salary of the user.<h3>";
+			echo "<h1>Salary Program</h1>";
+			echo "<h3>This program will calculate the salary of the user.</h3>";
 		?>
-		<!-- form to get the base and height from the user -->
+		<!-- form to get the bases and height from the user -->
     <form action="./results.php" method="post" target="results">
-      <label for="lblHoursWorked">HoursWorked (cm)</label>
-      <input type="float" id="hoursWorked" placeholder="Hours Worked (h) :" name="hoursWorked"><br><br>
-      <label for="lblHourlyRate">HourlyRate (cm)</label>
-      <input type="float" id="hourlyRate" placeholder="Hourly Rate ($) :" name="hourlyRate"><br><br>
-      <input type="submit" value="Calculate salary">
-		</form>
+      <label for="lblHoursWorked">Hours Worked (h):</label>
+      <input type="float" id="hoursWorked" placeholder="Hours worked..." name="hoursWorked"><br><br>
+      <label for="lblHourlyRate">Hourly Rate ($)</label>
+      <input type="float" id="hourlyRate" placeholder="Hourly rate..." name="hourlyRate"><br><br>
+      <input type="submit" value="Calculate Salary">
+    </form>
 
 			<!-- iframe for the results to show on the web page. -->
-			<iframe id="results" name="results">			
-				You earn $<? php echo "$moneyBeforeTax" ?> before tax.
-        The government takes $<? php echo "$moneyTaken" ?>.
-        You earn <? php echo "$moneyEarned" ?> after tax.
+			<iframe id="results" name="results">
+        Tou earn <? php echo="$moneyBeforeTax" ?>cm<sup>2</sup>.
       </iframe>
 	</body>
 </html>
